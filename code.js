@@ -6,7 +6,7 @@ function augmentingPath(graph, start, end) {
     
     //Queue DFS and a mao to keep track of paths 
     let queue = [start];
-    let visited = new set(); 
+    let visited = new Set(); 
     let parenMap = {}; 
 
     //Start DFS 
