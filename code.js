@@ -1,6 +1,6 @@
 function augmentingPath(graph, start, end) {
     //Handle where start and end nodes are the same 
-    if (start === end) {
+    if (start == end) {
         return [start]; 
     }
     
@@ -24,11 +24,11 @@ function augmentingPath(graph, start, end) {
                 parenMap[neighor] = current; 
 
                  // Reach end build path and return 
-                if (neighbor === end) {
+                if (neighbor == end) {
                     let path = [end]; 
                     let step = end; 
 
-                    while (step !== start) { 
+                    while (step != start) { 
                         step = parenMap[step];
                         path.unshift(step);
                     }
