@@ -10,7 +10,7 @@ function augmentingPath(graph, start, end) {
     let parenMap = {}; 
 
     //Start DFS 
-    while (queue > 0){
+    while (queue.length > 0){
         let current = queue.shift();
 
         //mark current node visited 
@@ -21,7 +21,7 @@ function augmentingPath(graph, start, end) {
             //Check if the neighbor is not visited 
             if (!visited.has(neighbor) && graph[current][neighbor] > 0) {
                 //Record the path 
-                parenMap[neighor] = current; 
+                parenMap [neighor] = current; 
 
                  // Reach end build path and return 
                 if (neighbor == end) {
