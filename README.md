@@ -32,3 +32,12 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer 
+The worst-case scenario for this would be $\Theta(V + E)$. With V being the vertices and the E being edges. It checks each Vertice and edge which would give us V * E. Since we have something where it will add a visited neighbor to the list and you will not revisit any previous nodes that you have visited already it would give us (V + E). Making the worst-case scenario being $\Theta(V + E)$.
+
+## Sources 
+I talked with Nolan about the assignment and how he went into it thinking to tackle the challenge. Other than that I did everything else myself.
+
+## Plagarism Statement 
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.”
