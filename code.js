@@ -21,7 +21,7 @@ function augmentingPath(graph, start, end) {
             //Check if the neighbor is not visited 
             if (!visited.has(neighbor) && graph[current][neighbor] > 0) {
                 //Record the path 
-                parenMap [neighor] = current; 
+                parenMap[neighbor] = current; 
 
                  // Reach end build path and return 
                 if (neighbor == end) {
@@ -34,7 +34,7 @@ function augmentingPath(graph, start, end) {
                     }
                     return path; 
                 }
-                // add the neighbor to queue
+                //Add the neighbor to queue
                 queue.push(neighbor);
                 visited.add(neighbor);
             }
